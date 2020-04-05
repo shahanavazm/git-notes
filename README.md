@@ -1,4 +1,4 @@
-# Git Notes
+# Notes On Git
 
 ## Push
 
