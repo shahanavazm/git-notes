@@ -57,3 +57,25 @@ The above creates branches but which are tracked branches. We do not need to use
 Show tracked branches and if they are out of sync:
 
 git branch -vv.
+
+## To do a merge dry run
+
+to=branch-name;from=origin/branch-name;git merge-tree $(git merge-base $from $to) $to \$from
+
+More details here: https://stackoverflow.com/a/6283843
+
+## To visualize the history
+
+git log --oneline --graph --all
+
+## Cheatsheet
+
+https://github.github.com/training-kit/downloads/github-git-cheat-sheet/
+
+## Prefer git revert
+
+https://stackoverflow.com/questions/41261474/how-to-delete-a-only-a-specific-commit-in-the-middle-of-the-git-log/41261661#41261661
+
+## A popular workflow
+
+Github Flow: https://guides.github.com/introduction/flow/
