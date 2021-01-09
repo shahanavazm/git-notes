@@ -1,5 +1,13 @@
 # Notes On Git
 
+## Creating a new repository
+git init  
+Add entries to .gitignore. Like for example /bak/  
+Add all files and commit using:  
+git add -A && git commit -m "a usefull commit message"  
+The above command can be used for each commit.
+
+
 ## Push
 
 Ensure: git remote add origin `<url>`
