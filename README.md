@@ -2,7 +2,7 @@
 
 ## Creating a new repository
 - git init  
-- Add entries to .gitignore. Like for example /bak/  
+- Add entries to .gitignore. 
 - Add all files and commit using:  
 git add -all && git commit -m "a usefull commit message"  
 The above command can be used for each commit.
