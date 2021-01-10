@@ -4,7 +4,7 @@
 - git init  
 - Add entries to .gitignore. 
 - Add all files and commit using:  
-git add -all && git commit -m "a usefull commit message"  
+git add -all; git commit -m "a usefull commit message"  
 The above command can be used for each commit.
 
 
