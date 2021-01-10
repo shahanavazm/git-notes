@@ -4,7 +4,7 @@
 - git init  
 - Add entries to .gitignore. Like for example /bak/  
 - Add all files and commit using:  
-git add -A && git commit -m "a usefull commit message"  
+git add -all && git commit -m "a usefull commit message"  
 The above command can be used for each commit.
 
 
