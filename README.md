@@ -7,6 +7,29 @@
 git add --all; git commit -m "a usefull commit message"  
 The above command can be used for each commit.
 
+## Usefull git commands  
+- To get diff of items before staging. Keep pressing n to not stage.  
+git add --all -p
+
+- To show all files in master branch  
+git ls-tree -r master
+
+- To recover a file from a previous commit  
+git checkout <commit hash> -- <filename>
+
+- To let non bare respository accept a push  
+git config receive.denyCurrentBranch updateInstead  
+https://stackoverflow.com/questions/804545/what-is-this-git-warning-message-when-pushing-changes-to-a-remote-repository/28262104#28262104
+
+- Convert non bare repository to bare  
+https://stackoverflow.com/questions/2199897/how-to-convert-a-normal-git-repository-to-a-bare-one
+
+- To push a local repository to server  
+convert it to a bare repository.  
+git remote add origin <url>  
+git push origin master --all --tags
+
+
 
 ## Push
 
