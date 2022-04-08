@@ -7,7 +7,7 @@
 git add --all; git commit -m "a usefull commit message"  
 The above command can be used for each commit.
 
-## Usefull git commands  
+## Useful git commands  
 - To get diff of items before staging. Keep pressing n to not stage.  
 git add --all -p
 
