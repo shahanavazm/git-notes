@@ -1,6 +1,7 @@
 # Notes On Git
 
 Purpose of staging is to group a set of files into a single commit.
+
 To go back to an older commit which has a working code and make that as head, first checkout the old commit into a new branch and then merge the new branch to master.
 
 ## Creating a new repository
