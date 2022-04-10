@@ -3,7 +3,7 @@
 Purpose of staging is to group a set of files into a single commit.
 
 To go back to an older commit(commitid) which has a working code and make that as head:  
-That is we want to revert commits from HEAD till commitid (not including).  
+That is we want to revert commits from HEAD till commitid (not including commitid).  
 git revert --no-edit commitid..HEAD  
 This will first revert the changes introduced by the commit at HEAD,  
 Then it will revert the changes introduced by the previous commit,  
