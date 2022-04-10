@@ -2,7 +2,17 @@
 
 Purpose of staging is to group a set of files into a single commit.
 
-To go back to an older commit which has a working code and make that as head, first checkout the old commit into a new branch and then merge the new branch to master.
+To go back to an older commit(commitid) which has a working code and make that as head:
+That is we want to revert commits from HEAD till commitid (not including).
+git revert --no-edit commitid..HEAD 
+This will first revert the changes introduced by the commit at HEAD, 
+Then it will revert the changes introduced by the previous commit,
+So on till it reaches commitid which it does not revert and stops.
+--no-edit will disable prompt for commit messages.
+
+to set editor as vim:
+git config --global core.editor vim
+
 
 ## Creating a new repository
 - git init  
@@ -32,34 +42,6 @@ https://stackoverflow.com/questions/2199897/how-to-convert-a-normal-git-reposito
 convert it to a bare repository.  
 git remote add origin <url>  
 git push origin master --all --tags
-
-
-
-## Push
-
-Ensure: git remote add origin `<url>`
-
-Push works on a branch.
-
-Use the form:
-
-git push origin branch-name
-
-This explicitly states the remote and the branch.
-
-branch-name should exist in remote, else it is created.
-
-To initialize a remote repository with a local repository:
-
-git push origin master - generally pushing master is enough to get started.
-
-If needed use --all and --tags to push all branches and tags.
-
---dry-run is available.
-
-To delete a branch in server:
-
-git push origin --delete branch-name
 
 ## Fetch
 
@@ -92,6 +74,32 @@ The above creates branches but which are tracked branches. We do not need to use
 Show tracked branches and if they are out of sync:
 
 git branch -vv.
+
+## Push
+
+Ensure: git remote add origin `<url>`
+
+Push works on a branch.
+
+Use the form:
+
+git push origin branch-name
+
+This explicitly states the remote and the branch.
+
+branch-name should exist in remote, else it is created.
+
+To initialize a remote repository with a local repository:
+
+git push origin master - generally pushing master is enough to get started.
+
+If needed use --all and --tags to push all branches and tags.
+
+--dry-run is available.
+
+To delete a branch in server:
+
+git push origin --delete branch-name
 
 ## To do a merge dry run
 
