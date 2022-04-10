@@ -1,7 +1,9 @@
 # Notes On Git
 
+## Staging
 Purpose of staging is to group a set of files into a single commit.
 
+## Revert
 To go back to an older commit(commitid) which has a working code and make that as head:  
 That is we want to revert commits from HEAD till commitid (not including commitid).  
 git revert --no-edit commitid..HEAD  
@@ -10,9 +12,11 @@ Then it will revert the changes introduced by the previous commit,
 So on till it reaches commitid which it does not revert and stops.  
 --no-edit will disable prompt for commit messages.
 
+## Editor setup
 To set editor as vim:  
 git config --global core.editor vim
 
+## Remote repository
 To work with a remote repository:  
 git clone <url>  
 make changes locally and commit.  
