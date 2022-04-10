@@ -10,17 +10,13 @@ Then it will revert the changes introduced by the previous commit,
 So on till it reaches commitid which it does not revert and stops.  
 --no-edit will disable prompt for commit messages.
 
-- To set editor as vim:
-
+To set editor as vim:  
 git config --global core.editor vim
 
-- To work with a remote repository:
-
-git clone <url>
-
-make changes locally and commit.
-
-git push
+To work with a remote repository:  
+git clone <url>  
+make changes locally and commit.  
+git push  
 
 
 
