@@ -10,7 +10,7 @@ git revert --no-edit commitid..HEAD
 This will first revert the changes introduced by the commit at HEAD,  
 Then it will revert the changes introduced by the previous commit,  
 So on till it reaches commitid which it does not revert and stops.  
---no-edit will disable prompt for commit messages.
+--no-edit will disable prompts for commit messages.
 
 ## Editor setup
 To set editor as vim:  
